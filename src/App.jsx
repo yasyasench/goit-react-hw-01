@@ -1,9 +1,13 @@
+import "./css/App.css";
+
 import userData from "../src/userData.json";
 import friends from "../src/friends.json";
+
 import transactions from "../src/transactions.json";
-import Profile from "./components/Profile";
-import FriendList from "./components/FriendList";
-import TransactionHistory from "./components/TransactionHistory";
+import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+
 
 
 
@@ -14,7 +18,7 @@ const App = () => {
             name={userData.username}
             tag={userData.tag}
             location={userData.location}
-            image={userData.image}
+            image={userData.avatar}
             status={userData.status}
        />
        <FriendList friends={friends} />
